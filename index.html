@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Angry Bird 🎂</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Page 1: Title -->
+        <div class="page page-1 active">
+            <div class="content">
+                <div class="title-wrapper">
+                    <h1 class="main-title">Happy Birthday</h1>
+                    <p class="subtitle">Angry Bird 🐦</p>
+                </div>
+                <div class="floating-hearts">
+                    <span class="heart">❤️</span>
+                    <span class="heart">💕</span>
+                    <span class="heart">💖</span>
+                    <span class="heart">💝</span>
+                </div>
+            </div>
+            <div class="nav-dots">
+                <button class="dot active" onclick="goToPage(0)"></button>
+                <button class="dot" onclick="goToPage(1)"></button>
+                <button class="dot" onclick="goToPage(2)"></button>
+                <button class="dot" onclick="goToPage(3)"></button>
+                <button class="dot" onclick="goToPage(4)"></button>
+            </div>
+            <button class="nav-btn next-btn" onclick="nextPage()">Next →</button>
+        </div>
+
+        <!-- Page 2: Letter -->
+        <div class="page page-2">
+            <div class="content">
+                <div class="letter">
+                    <p class="letter-greeting">Dear Angry Bird,</p>
+                    <p class="letter-text">Today marks another year of your amazing existence, and I wanted to take a moment to tell you how incredibly special you are.</p>
+                    <p class="letter-text">Every day with you feels like a beautiful adventure. Your passion, your energy, and that fiery spirit of yours makes life so much brighter.</p>
+                </div>
+            </div>
+            <div class="nav-dots">
+                <button class="dot" onclick="goToPage(0)"></button>
+                <button class="dot active" onclick="goToPage(1)"></button>
+                <button class="dot" onclick="goToPage(2)"></button>
+                <button class="dot" onclick="goToPage(3)"></button>
+                <button class="dot" onclick="goToPage(4)"></button>
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-btn prev-btn" onclick="prevPage()">← Back</button>
+                <button class="nav-btn next-btn" onclick="nextPage()">Next →</button>
+            </div>
+        </div>
+
+        <!-- Page 3: Memories -->
+        <div class="page page-3">
+            <div class="content">
+                <div class="letter">
+                    <p class="letter-greeting">I love...</p>
+                    <ul class="love-list">
+                        <li>The way you laugh ✨</li>
+                        <li>Your determination and drive 🔥</li>
+                        <li>How you make me feel 💫</li>
+                        <li>Your beautiful heart ❤️</li>
+                        <li>Every moment with you 🌙</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-dots">
+                <button class="dot" onclick="goToPage(0)"></button>
+                <button class="dot" onclick="goToPage(1)"></button>
+                <button class="dot active" onclick="goToPage(2)"></button>
+                <button class="dot" onclick="goToPage(3)"></button>
+                <button class="dot" onclick="goToPage(4)"></button>
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-btn prev-btn" onclick="prevPage()">← Back</button>
+                <button class="nav-btn next-btn" onclick="nextPage()">Next →</button>
+            </div>
+        </div>
+
+        <!-- Page 4: Wish -->
+        <div class="page page-4">
+            <div class="content">
+                <div class="letter">
+                    <p class="letter-greeting">My Wish for You</p>
+                    <p class="letter-text">On your special day, I wish for you all the happiness in the world. May this year bring you growth, joy, and endless possibilities.</p>
+                    <p class="letter-text">May you continue to shine bright, chase your dreams, and know that I'll always be here cheering you on.</p>
+                    <p class="letter-text italic">You deserve the best. 🌟</p>
+                </div>
+            </div>
+            <div class="nav-dots">
+                <button class="dot" onclick="goToPage(0)"></button>
+                <button class="dot" onclick="goToPage(1)"></button>
+                <button class="dot" onclick="goToPage(2)"></button>
+                <button class="dot active" onclick="goToPage(3)"></button>
+                <button class="dot" onclick="goToPage(4)"></button>
+            </div>
+            <div class="nav-buttons">
+                <button class="nav-btn prev-btn" onclick="prevPage()">← Back</button>
+                <button class="nav-btn next-btn" onclick="nextPage()">Next →</button>
+            </div>
+        </div>
+
+        <!-- Page 5: Finale -->
+        <div class="page page-5">
+            <div class="content">
+                <div class="finale">
+                    <h2 class="finale-title">Happy Birthday!</h2>
+                    <div class="confetti-container">
+                        <span class="confetti">🎉</span>
+                        <span class="confetti">🎂</span>
+                        <span class="confetti">🎈</span>
+                        <span class="confetti">💝</span>
+                        <span class="confetti">🎊</span>
+                    </div>
+                    <p class="finale-text">With all my love ❤️</p>
+                </div>
+            </div>
+            <div class="nav-dots">
+                <button class="dot" onclick="goToPage(0)"></button>
+                <button class="dot" onclick="goToPage(1)"></button>
+                <button class="dot" onclick="goToPage(2)"></button>
+                <button class="dot" onclick="goToPage(3)"></button>
+                <button class="dot active" onclick="goToPage(4)"></button>
+            </div>
+            <button class="nav-btn prev-btn" onclick="prevPage()">← Back</button>
+        </div>
+    </div>
+
+    <!-- Music Control -->
+    <div class="music-control">
+        <button id="musicBtn" onclick="toggleMusic()">🔊 Music On</button>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="bgMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
